@@ -25,7 +25,9 @@ import androidx.annotation.NonNull;
  * DB version & declare DAO
  */
 
-@Database(entities = {TootEntity.class, AccountEntity.class, InstanceEntity.class}, version = 10, exportSchema = false)
+@Database(entities = {TootEntity.class, AccountEntity.class, InstanceEntity.class,TimelineStatusEntity.class,
+                TimelineAccountEntity.class
+        }, version = 10, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract TootDao tootDao();
